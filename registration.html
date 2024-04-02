@@ -1,0 +1,108 @@
+<html>
+<head>
+      <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>
+                Registration Form
+            </h1>
+            <form onsubmit="return confirm('Do you really want to submit the form?');">
+                <div class="row">
+                    <label>
+                        UserName
+                    </label>
+                    <input type="text" name="uname">
+                </div>  
+                <div class="row">
+                    <label>
+                        Email
+                    </label>
+                    <input type="text" name="mail">
+                </div>
+                <div class="row">
+                    <label>
+                        Password
+                    </label>
+                    <input type="password" name="pass">
+                </div>
+                <div class="row">
+                    <label>
+                        Confirm Password
+                    </label>
+                    <input type="password" name="cpass">
+                </div>
+                <div class="brow">
+                    <button>submit</button>
+                    <button>cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #8793c9;
+}
+
+h1{
+    color: rgb(88, 34, 3);
+    font-family: serif;
+}
+
+button{
+    position: relative;
+    padding: 7px;
+    background-color:burlywood;
+    border-radius: 5px;
+    height: 30px;
+    width: 90px;
+    border-width: 1px;
+    margin-top: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+label{
+    margin-right: 7px;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(156, 240, 240, 0.575);
+    padding: 0 50;
+    border-radius: 10px;
+}
+
+.row{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brow{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
